@@ -26,10 +26,358 @@ li {
 body {
   background: #1e252b;
   font-family: Poppins;
-  font-family: ;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: currentColor;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header-list {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+
+.header-item {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header-button {
+  border-radius: 8px;
+  background: #ff6e30;
+  width: 118px;
+  height: 48px;
+  color: #fdf5ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.hero {
+  background-image: url(./img/background.png);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.hero-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 70px */
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  width: 487px;
+  margin-bottom: 60px;
+}
+
+.hero-form {
+  margin-bottom: 121px;
+}
+
+.hero-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  background-color: #283036;
+  padding-left: 55px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 11px;
+}
+
+.hero-input-wrap::before {
+  content: ""; /*\1F50D*/
+  position: absolute;
+  background-image: url(./img/svg/search.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  top: 20px;
+  left: 18px;
+  background-color: transparent;
+  color: #ffffff61;
+}
+
+.hero-input {
+  width: 70%;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #283036;
+  border: none;
+  outline: none;
+}
+
+.hero-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 36px;
+  border-radius: 8px;
+  background-color: #ff6e30;
+}
+
+.hero-list {
+  display: flex;
+  gap: 31px;
+}
+
+.popular {
+  margin-bottom: 200px;
+}
+
+.main-box {
+  display: flex;
+  gap: 30px;
+}
+
+.popular-photo {
+  padding-top: 33px;
+  margin-left: 33px;
+}
+
+.popular-main-title {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 62.4px */
+  margin-bottom: 25px;
+}
+
+.popular-main-text {
+  width: 427px;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 auto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 90px;
+}
+
+.popular-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.popular-item {
+  width: 392px;
+  height: 294px;
+  border-radius: 15px;
+  background: #1e252b;
+  flex-basis: calc((100% - 3 * 90px) / 3);
+}
+
+.popular-item:hover {
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-image: url(./img/svg/rectangle5.png);
+  backdrop-filter: blur(25px);
+  width: 392px;
+  height: 294px;
+}
+.popular-title {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 3px;
+  padding-top: 33px;
+}
+
+.popular-text {
+  color: rgba(255, 165, 55, 0.55);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.popular-list-text {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  width: 326px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.popular-button {
+  color: #ff6e30;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1e252b;
+  height: 64px;
+}
+
+.brand {
+  margin-bottom: 200px;
+}
+
+.box-brand {
+  width: 1224px;
+  height: 253px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-image: url(./img/rectangle-308.png);
+  backdrop-filter: blur(25px);
+}
+
+.brand-title {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.brand-list {
+  display: flex;
+  gap: 107px;
+  margin-left: 107px;
+}
+
+.newcomer {
+  margin-bottom: 200px;
+}
+
+.newcomer-main-box {
+  display: flex;
+}
+
+.newcomer-main-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 62.4px */
+  margin-bottom: 30px;
+}
+
+.newcomer-main-text {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 18px;
+  width: 427px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 60px;
+  margin-right: 197px;
+}
+
+.newcomer-button {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  background: #ff6e30;
+  width: 198px;
+  height: 58px;
+  flex-shrink: 0;
+}
+
+.newcomer-list {
+  display: flex;
+}
+
+.newcomer-title {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.newcomer-text {
+  color: rgba(255, 165, 55, 0.55);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.newcomer-list-text {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 214.286% */
+  width: 245px;
 }
