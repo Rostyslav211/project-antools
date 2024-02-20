@@ -190,8 +190,6 @@ a {
 
 .popular {
   margin-bottom: 200px;
-  margin-right: 108px;
-  margin-left: 108px;
 }
 
 .popular-main-box {
@@ -384,6 +382,8 @@ a {
 }
 
 .newcomer-item:hover {
+  width: 288px;
+  height: 284px;
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.8);
   background-image: url(./img/rectangle5.png);
@@ -465,11 +465,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 500px;
+  width: 549px;
   border-radius: 15px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
   background-color: #283036;
-  padding-left: 55px;
+  padding-left: 24px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 11px;
@@ -548,7 +548,7 @@ hr {
 
 .footer-list {
   display: flex;
-  justify-content: space-between;
+  gap: 115px;
 }
 .footer-item {
   color: rgba(255, 255, 255, 0.55);
@@ -556,6 +556,8 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-list-title {
@@ -564,4 +566,9 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  margin-bottom: 10px;
 }
